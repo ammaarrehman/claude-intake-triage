@@ -1,0 +1,12 @@
+# secrets — never commit your API key
+.env
+*.key
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+# apps script local auth (if you use clasp later)
+.clasp.json
+.clasprc.json
+node_modules/

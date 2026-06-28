@@ -1,0 +1,95 @@
+{
+  "_comment": "15 sample intake messages. expected_primary is the main need. expected_secondary lists additional needs that a good triage should also capture (used to score 'needs coverage'). No real personal data is used.",
+  "cases": [
+    {
+      "id": "tc01",
+      "input": "Hi, I lost my job recently and need help finding food assistance and resume help. I live near Columbia and don't have a car.",
+      "expected_primary": "Food Assistance",
+      "expected_secondary": ["Workforce & Employment", "Transportation"]
+    },
+    {
+      "id": "tc02",
+      "input": "My family is being evicted at the end of the month and I don't know where we'll go. We have two kids.",
+      "expected_primary": "Housing & Shelter",
+      "expected_secondary": ["Childcare & Family Support"]
+    },
+    {
+      "id": "tc03",
+      "input": "Looking for free tutoring for my son who is struggling with algebra in 9th grade.",
+      "expected_primary": "Education & Tutoring",
+      "expected_secondary": []
+    },
+    {
+      "id": "tc04",
+      "input": "I need to see a doctor but I don't have insurance. Are there any low-cost clinics around here?",
+      "expected_primary": "Healthcare Access",
+      "expected_secondary": []
+    },
+    {
+      "id": "tc05",
+      "input": "Behind on my electric bill and the shutoff notice says Friday. Is there any emergency help?",
+      "expected_primary": "Financial Assistance",
+      "expected_secondary": []
+    },
+    {
+      "id": "tc06",
+      "input": "I got a job offer but it starts before I can afford a bus pass to get there. Any help with transportation?",
+      "expected_primary": "Transportation",
+      "expected_secondary": ["Workforce & Employment"]
+    },
+    {
+      "id": "tc07",
+      "input": "My landlord won't return my security deposit and is threatening me. I think I need legal help.",
+      "expected_primary": "Legal Aid",
+      "expected_secondary": ["Housing & Shelter"]
+    },
+    {
+      "id": "tc08",
+      "input": "I just moved here and my English isn't great. I need help filling out paperwork for benefits.",
+      "expected_primary": "Immigration & Language Support",
+      "expected_secondary": ["Financial Assistance"]
+    },
+    {
+      "id": "tc09",
+      "input": "Single mom, need affordable childcare so I can take a job training program in the mornings.",
+      "expected_primary": "Childcare & Family Support",
+      "expected_secondary": ["Workforce & Employment"]
+    },
+    {
+      "id": "tc10",
+      "input": "Not sure who to ask. Things are hard right now and I just need someone to point me in the right direction.",
+      "expected_primary": "Other / Unclear",
+      "expected_secondary": []
+    },
+    {
+      "id": "tc11",
+      "input": "We ran out of groceries and the kids haven't eaten much today. Need food as soon as possible.",
+      "expected_primary": "Food Assistance",
+      "expected_secondary": ["Childcare & Family Support"]
+    },
+    {
+      "id": "tc12",
+      "input": "I'm a veteran trying to get back on my feet. I need work and a place to stay temporarily.",
+      "expected_primary": "Housing & Shelter",
+      "expected_secondary": ["Workforce & Employment"]
+    },
+    {
+      "id": "tc13",
+      "input": "Can someone help me apply for jobs online? I don't really know how to use the application websites.",
+      "expected_primary": "Workforce & Employment",
+      "expected_secondary": []
+    },
+    {
+      "id": "tc14",
+      "input": "I need childcare and also help paying for it, my hours got cut at work.",
+      "expected_primary": "Childcare & Family Support",
+      "expected_secondary": ["Financial Assistance"]
+    },
+    {
+      "id": "tc15",
+      "input": "I feel unsafe at home and need to get out with my daughter. I don't know what to do.",
+      "expected_primary": "Housing & Shelter",
+      "expected_secondary": ["Childcare & Family Support", "Legal Aid"]
+    }
+  ]
+}
