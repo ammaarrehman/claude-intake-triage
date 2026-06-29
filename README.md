@@ -13,16 +13,6 @@ Small nonprofits, student-support offices, and constituent-service teams get
 requests as messy free text through forms and email. Sorting, summarizing, and
 routing them by hand is slow, and urgent or mixed-need requests get missed.
 
-## Demo
-
-| Intake form | Triaged output in Sheets |
-|-------------|--------------------------|
-| ![Intake form](screenshots/form.png) | ![Sheet output](screenshots/sheet-output.png) |
-
-Eval harness (v1 → v2 improvement):
-
-![Eval results](screenshots/eval-results.png)
-
 ## What it does
 
 ```
