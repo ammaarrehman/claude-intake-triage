@@ -10,3 +10,5 @@ venv/
 .clasp.json
 .clasprc.json
 node_modules/
+# macOS folder metadata
+.DS_Store
