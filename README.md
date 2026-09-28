@@ -4,8 +4,8 @@ A lightweight intake-triage workflow for small community-service organizations.
 A community member submits a request through a Google Form; Claude reads it and
 returns structured triage fields — category, urgency, a short summary, suggested
 next step, follow-up questions, and a human-review flag — written straight back
-into the Google Sheet for staff to review. **A person reviews every request
-before any action is taken.**
+into the Google Sheet for staff to review. **Every record carries a human-review flag; it's built as a first pass
+for a person to review, not a decision-maker.**
 
 **▶ [Watch the 90-second demo](https://www.loom.com/share/c43efcd9c3314bcd9cda3002282d31a5)**
 
@@ -65,7 +65,7 @@ mirrored in [`evals/prompts.py`](evals/prompts.py) (`SYSTEM_V2`).
 - Does **not** give medical, legal, or financial advice.
 - Summarizes only from the submitted text; it is instructed not to invent resources.
 - Flags urgent/sensitive/unclear requests for human review.
-- This is a triage aid, not a decision-maker. Staff review every row.
+- This is a triage aid, not a decision-maker; its output is meant for human review.
 
 ## Setup
 
