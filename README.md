@@ -4,8 +4,9 @@ A lightweight intake-triage workflow for small community-service organizations.
 A community member submits a request through a Google Form; Claude reads it and
 returns structured triage fields — category, urgency, a short summary, suggested
 next step, follow-up questions, and a human-review flag — written straight back
-into the Google Sheet for staff to review. **Every record carries a human-review flag; it's built as a first pass
-for a person to review, not a decision-maker.**
+into the Google Sheet for staff to review. **Every record includes a Yes/No human-review
+flag. Staff should review every row, including rows flagged No; the flag marks cases
+needing extra attention, not permission to act automatically.**
 
 **▶ [Watch the 90-second demo](https://www.loom.com/share/c43efcd9c3314bcd9cda3002282d31a5)**
 
@@ -65,6 +66,7 @@ mirrored in [`evals/prompts.py`](evals/prompts.py) (`SYSTEM_V2`).
 - Does **not** give medical, legal, or financial advice.
 - Summarizes only from the submitted text; it is instructed not to invent resources.
 - Flags urgent/sensitive/unclear requests for human review.
+- A No review flag does not establish that a request is safe or fully understood.
 - This is a triage aid, not a decision-maker; its output is meant for human review.
 
 ## Setup
@@ -80,6 +82,9 @@ mirrored in [`evals/prompts.py`](evals/prompts.py) (`SYSTEM_V2`).
 
 The harness runs 15 sample intakes through Claude and scores **primary accuracy**
 and **needs coverage** (whether multi-need requests are fully captured).
+The committed results use `claude-haiku-4-5`: primary accuracy is measured across
+all 15 cases, while needs coverage is measured only across the 10 multi-need cases.
+These are results on a small sample set, not an estimate of production accuracy.
 
 ```bash
 cd evals
